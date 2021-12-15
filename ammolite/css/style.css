@@ -486,9 +486,9 @@ body {
   }
 
   .page {
-    background: url("../img/bg02.png") top right/735px 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
-    background: url("../img/bg02.png") top right/735px 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
-    background: url("../img/bg02.png") top right/735px 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+    background: url("../img/bg02.png") top right/100% 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
+    background: url("../img/bg02.png") top right/100% 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+    background: url("../img/bg02.png") top right/100% 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
   }
 }
 
@@ -539,15 +539,15 @@ body {
 
 @media (max-width: 991.98px) {
 
-  .webp .page { background: url(../img/bg02.webp) top right/735px 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88))); }
+  .webp .page { background: url(../img/bg02.webp) top right/100% 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88))); }
 }
 
 @media (max-width: 991.98px) {
 
-  .webp .page { background: url(../img/bg02.webp) top right/735px 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
+  .webp .page { background: url(../img/bg02.webp) top right/100% 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
 }
 
 @media (max-width: 991.98px) {
 
-  .webp .page { background: url(../img/bg02.webp) top right/735px 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
+  .webp .page { background: url(../img/bg02.webp) top right/100% 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
 }
