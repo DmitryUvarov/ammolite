@@ -453,7 +453,7 @@ body {
   }
 
   .main__title {
-    font-size: calc(25px + 15 * ((100vw - 320px) / 830));
+    font-size: calc(20px + 20 * ((100vw - 320px) / 830));
   }
 
   .main__title {

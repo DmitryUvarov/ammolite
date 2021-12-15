@@ -139,7 +139,7 @@ body {
         font-weight: 600;
         line-height: 100%;
         color: #FFFFFF;
-        @include adaptive-value("font-size", 40, 25, 1);
+        @include adaptive-value("font-size", 40, 20, 1);
         @include adaptive-value("margin-bottom", 20, 10, 1);
     }
     &__description {
