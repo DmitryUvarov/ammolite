@@ -122,7 +122,7 @@ body {
     & img {
         width: 280px;
     }
-    @media (min-width: $md2+px) {
+    @media (min-width: 1200px) {
         display: none;
     }
 }
@@ -203,21 +203,12 @@ body {
     }
 }
 
-
-
-.bg-image-fix {
-    position: fixed;
-    height: 100%;
-    top: 0;
-    right: 0;
-    opacity: 0.4;
-
-    & img {
-        height: 100%;
-    }
-}
-.logo-image-fix {
-    position: fixed;
-    top: 360px;
+.link-image-fix {
+    position: absolute;
+    top: calc(50% - 115px);
     right: 180px;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
 }

@@ -351,21 +351,9 @@ body {
   font-weight: 300;
 }
 
-.bg-image-fix {
-  position: fixed;
-  height: 100%;
-  top: 0;
-  right: 0;
-  opacity: 0.4;
-}
-
-.bg-image-fix img {
-  height: 100%;
-}
-
-.logo-image-fix {
-  position: fixed;
-  top: 360px;
+.link-image-fix {
+  position: absolute;
+  top: calc(50% - 115px);
   right: 180px;
 }
 
@@ -393,10 +381,6 @@ body {
   .header__made {
     margin-right: 25px;
   }
-
-  .borika {
-    display: none;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -404,6 +388,10 @@ body {
     background: url("../img/bg.png") top right/735px 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
     background: url("../img/bg.png") top right/735px 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
     background: url("../img/bg.png") top right/735px 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+  }
+
+  .borika {
+    display: none;
   }
 }
 
@@ -420,6 +408,10 @@ body {
     background: url("../img/bg.png") top right/735px 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
     background: url("../img/bg.png") top right/735px 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
     background: url("../img/bg.png") top right/735px 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+  }
+
+  .link-image-fix {
+    display: none;
   }
 }
 
