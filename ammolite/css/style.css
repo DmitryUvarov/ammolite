@@ -42,10 +42,10 @@ input:focus {
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "icons";
   font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.woff2") format("woff2");
-  font-weight: 300;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -74,10 +74,10 @@ input:focus {
 }
 
 @font-face {
-  font-family: "icons";
+  font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -213,6 +213,9 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .header__languages-link:not(:last-child) {
@@ -265,16 +268,47 @@ body {
 }
 
 .borika {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.borika .borika__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.borika a {
+  width: 240px;
+}
+
+.borika a:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.borika a:last-child {
+  width: 185px;
+}
+
+.borika a:last-child img {
+  width: 185px;
 }
 
 .borika img {
-  width: 280px;
+  width: 240px;
 }
 
 .main {
@@ -344,17 +378,14 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .contacts-main__link span,
 .contacts-main b span {
   font-weight: 300;
-}
-
-.link-image-fix {
-  position: absolute;
-  top: calc(50% - 115px);
-  right: 180px;
 }
 
 @media (min-width: 479.98px) {
@@ -385,33 +416,69 @@ body {
 
 @media (min-width: 1200px) {
   .page {
-    background: url("../img/bg.png") top right/735px 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
-    background: url("../img/bg.png") top right/735px 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
-    background: url("../img/bg.png") top right/735px 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+    background: url("../img/bg.png") top right/735px 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
+    background: url("../img/bg.png") top right/735px 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+    background: url("../img/bg.png") top right/735px 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+  }
+}
+
+@media (min-width: 1450px) {
+  .borika {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
-  .borika {
-    display: none;
+  .borika a {
+    width: 296px;
+  }
+
+  .borika a:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .borika a:last-child {
+    width: 236px;
+  }
+
+  .borika a:last-child img {
+    width: 236px;
+  }
+
+  .borika img {
+    width: 296px;
   }
 }
 
 @media (min-width: 2000px) {
   .page {
-    background: url("../img/bg.png") top right/38.2812% 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
-    background: url("../img/bg.png") top right/38.2812% 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
-    background: url("../img/bg.png") top right/38.2812% 100% no-repeat, url("../img/borikafasten.png") top 50% right 180px no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+    background: url("../img/bg.png") top right/38.2812% 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
+    background: url("../img/bg.png") top right/38.2812% 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+    background: url("../img/bg.png") top right/38.2812% 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+  }
+}
+
+@media (max-width: 1850px) {
+  .main__description {
+    width: 57%;
+  }
+}
+
+@media (max-width: 1640px) {
+  .main__description {
+    width: 50%;
   }
 }
 
 @media (max-width: 1200px) {
   .page {
-    background: url("../img/bg.png") top right/735px 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
-    background: url("../img/bg.png") top right/735px 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
-    background: url("../img/bg.png") top right/735px 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
-  }
-
-  .link-image-fix {
-    display: none;
+    background: url("../img/bg.png") top right/620px 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88)));
+    background: url("../img/bg.png") top right/620px 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
+    background: url("../img/bg.png") top right/620px 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
   }
 }
 
@@ -434,6 +501,10 @@ body {
 
   .header__made {
     font-size: calc(12px + 6 * ((100vw - 320px) / 830));
+  }
+
+  .borika a:not(:last-child) {
+    margin-bottom: calc(20px + 10 * ((100vw - 320px) / 830));
   }
 
   .main {
@@ -482,51 +553,72 @@ body {
     background: url("../img/bg02.png") top right/100% 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
     background: url("../img/bg02.png") top right/100% 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%);
   }
+
+  .main__description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1480px) and (min-width: 991.98px) {
+  .main__description {
+    width: 35%;
+  }
+}
+
+@media (any-hover: hover) {
+  .header__languages-link:hover {
+    color: #b8b8b8;
+  }
+
+  .contacts-main__link:hover,
+  .contacts-main b:hover {
+    color: #b8b8b8;
+  }
 }
 
 @media (min-width: 1200px) {
-
-  .webp .page { background: url(../img/bg.webp) top right/735px 100% no-repeat, url(../img/borikafasten.webp) top 50% right 180px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88))); }
-}
-
-@media (min-width: 1200px) {
-
-  .webp .page { background: url(../img/bg.webp) top right/735px 100% no-repeat, url(../img/borikafasten.webp) top 50% right 180px no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
-}
-
-@media (min-width: 1200px) {
-
-  .webp .page { background: url(../img/bg.webp) top right/735px 100% no-repeat, url(../img/borikafasten.webp) top 50% right 180px no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
-}
-
-@media (min-width: 2000px) {
-
-  .webp .page { background: url(../img/bg.webp) top right/38.2812% 100% no-repeat, url(../img/borikafasten.webp) top 50% right 180px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88))); }
-}
-
-@media (min-width: 2000px) {
-
-  .webp .page { background: url(../img/bg.webp) top right/38.2812% 100% no-repeat, url(../img/borikafasten.webp) top 50% right 180px no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
-}
-
-@media (min-width: 2000px) {
-
-  .webp .page { background: url(../img/bg.webp) top right/38.2812% 100% no-repeat, url(../img/borikafasten.webp) top 50% right 180px no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
-}
-
-@media (max-width: 1200px) {
 
   .webp .page { background: url(../img/bg.webp) top right/735px 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88))); }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
 
   .webp .page { background: url(../img/bg.webp) top right/735px 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
 
   .webp .page { background: url(../img/bg.webp) top right/735px 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
+}
+
+@media (min-width: 2000px) {
+
+  .webp .page { background: url(../img/bg.webp) top right/38.2812% 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88))); }
+}
+
+@media (min-width: 2000px) {
+
+  .webp .page { background: url(../img/bg.webp) top right/38.2812% 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
+}
+
+@media (min-width: 2000px) {
+
+  .webp .page { background: url(../img/bg.webp) top right/38.2812% 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
+}
+
+@media (max-width: 1200px) {
+
+  .webp .page { background: url(../img/bg.webp) top right/620px 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.88))); }
+}
+
+@media (max-width: 1200px) {
+
+  .webp .page { background: url(../img/bg.webp) top right/620px 100% no-repeat, -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
+}
+
+@media (max-width: 1200px) {
+
+  .webp .page { background: url(../img/bg.webp) top right/620px 100% no-repeat, linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.88) 100%); }
 }
 
 @media (max-width: 991.98px) {
